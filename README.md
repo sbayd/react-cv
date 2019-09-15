@@ -15,7 +15,7 @@ If needed, It is possible to use your own component inside.
 
 ## How to install ?
 
-`npm install react-flippy` or `yarn add react-flippy`
+`npm install react-cv` or `yarn add react-cv`
 
 
 Too Lazy to read documentation?
