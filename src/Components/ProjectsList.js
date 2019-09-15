@@ -28,7 +28,7 @@ export default class ProjectsList extends React.Component {
             const { sectionHeader, description, items } = group;
             return (<div className={BulmaCSS.container}>
               <div className={mergeClassNames(BulmaCSS.content)}>
-                <div className={mergeClassNames(BulmaCSS['is-marginless'], BulmaCSS['is-padingless'])}>
+                <div className={mergeClassNames(BulmaCSS['is-marginless'])}>
                   <h5 className={mergeClassNames(BulmaCSS.title, Styles.companyTitle, BulmaCSS['is-size-5'])}>
                     {sectionHeader}
                   </h5>
@@ -40,7 +40,7 @@ export default class ProjectsList extends React.Component {
                 {items.map((project) => {
                   const { projectUrl, title, description } = project;
                   return (
-                    <div className={BulmaCSS['u-full-width']}>
+                    <div className={mergeClassNames(BulmaCSS['u-full-width'], Styles.avoidBreakingOnPrint)}>
                       <h6
                         className={mergeClassNames(Styles.projectTitle, BulmaCSS['is-size-6'])}
                       >

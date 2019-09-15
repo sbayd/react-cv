@@ -5,6 +5,27 @@ import Styles from '../styles.css';
 import Section from './Section';
 import BulmaCSS from 'bulma/css/bulma.css'
 
+export const PureTagList = ({ tags = [], tagClass }) => (
+  <div className={mergeClass(BulmaCSS.tags, BulmaCSS['are-medium'])}>
+    {tags.map((tag) => {
+      return (
+        <div className={mergeClass(BulmaCSS.tag, BulmaCSS[tagClass])} >
+          {tag}
+        </div>
+      );
+    })}
+  </div>
+);
+
+PureTagList.propTypes = {
+  tags: PropTypes.arrayOf(PropTypes.string),
+  tagClass: PropTypes.string
+};
+
+PureTagList.defaultProps = {
+  tagClass: 'is-info'
+}
+
 export default class TagsList extends React.Component {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({})),
@@ -21,15 +42,7 @@ export default class TagsList extends React.Component {
         content={description}
         icon={icon}
       >
-        <div className={mergeClass(BulmaCSS.tags)} >
-          {items.map((tag) => {
-            return (
-              <div className={mergeClass(BulmaCSS.tag, BulmaCSS['is-info'])} >
-                {tag}
-              </div>
-            );
-          })}
-        </div>
+        <PureTagList tags={items} tagClass={'is-primary'} />
       </Section>
     );
   }
