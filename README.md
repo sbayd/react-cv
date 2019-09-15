@@ -8,7 +8,7 @@ If needed, It is possible to use your own component inside.
 
 [![NPM](https://img.shields.io/npm/v/react-cv.svg)](https://www.npmjs.com/package/react-cv) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-<!-- [Live Demo](http://flippy.sbaydin.com "Live Demo") -->
+[Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
 
 
 ## How to install ?
