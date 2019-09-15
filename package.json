@@ -1,6 +1,6 @@
 {
   "name": "react-cv",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "React-CV is fully customizable and printable CV / Resumee component for React/Gatsby.",
   "author": "sbayd",
   "license": "MIT",
@@ -17,7 +17,6 @@
     "test:watch": "react-scripts test --env=jsdom",
     "build": "rollup -c",
     "start": "rollup -c -w",
-    "storybook": "start-storybook",
     "prepare": "yarn run build",
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
@@ -65,7 +64,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.10.2",
     "@fortawesome/free-solid-svg-icons": "^5.10.2",
     "@fortawesome/react-fontawesome": "^0.1.4",
-    "@storybook/react": "^5.2.0",
     "bulma": "^0.7.5",
     "classnames": "^2.2.6"
   }
