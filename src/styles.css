@@ -1,0 +1,51 @@
+
+
+.cvContainer {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 500px
+}
+
+.appContainer {
+  padding-top:  30px;
+  background: white;
+}
+
+.sectionIcon {
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 0.75em;
+  border-radius: 100%;
+  background: #2d7788;
+  color: white;
+}
+
+.sectionTitle {
+
+}
+
+.companyTitle {
+  display: inline;
+}
+
+.companyMeta, .projectMeta { 
+  padding: 1em;
+}
+
+.projectTitle {
+  display: inline;
+}
+
+.sectionContent {
+  padding: 1em;
+}
+
+.divider {
+  margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid hsl(0, 0%, 71%);;
+}
+
+body {
+  background-color: #f5f5f5;
+}
