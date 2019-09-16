@@ -8,7 +8,9 @@ If needed, It is possible to use your own component inside.
 
 [![NPM](https://img.shields.io/npm/v/react-cv.svg)](https://www.npmjs.com/package/react-cv) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![Preview](cv_preview.png)
+![Preview Desktop / PDF](cv_preview.png)
+
+![Preview Mobile](mobile_preview.png)
 
 [Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
 
@@ -17,11 +19,6 @@ If needed, It is possible to use your own component inside.
 
 `npm install react-cv` or `yarn add react-cv`
 
-
-Too Lazy to read documentation?
-See working versions in example:
-[Example App](https://github.com/sbayd/react-cv/blob/master/example/src/App.js)
-[Example Data Format With Full Types](https://github.com/sbayd/react-cv/blob/master/example/src/data.js)
 
 ## Basic Usage
 
@@ -114,7 +111,12 @@ Here are the complete list of props and descriptions.
 	]
 	```
 
+Too Lazy to read documentation?
+See working versions in example:
 
+[Example App](https://github.com/sbayd/react-cv/blob/master/example/src/App.js)
+
+[Example Data Format With Full Types](https://github.com/sbayd/react-cv/blob/master/example/src/data.js)
 
 ## License
 
