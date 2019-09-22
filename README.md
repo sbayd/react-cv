@@ -121,9 +121,10 @@ Here are the complete list of props and descriptions.
 	```
 
 Too Lazy to read documentation? See working versions in example:
+
 [Example App Code](https://github.com/sbayd/react-cv/blob/master/example/src/App.js)
 
-[Example Data Format With Full Types Code](https://github.com/sbayd/react-cv/blob/master/example/src/data.js)
+[Example Data Format With Full Types (Code)](https://github.com/sbayd/react-cv/blob/master/example/src/data.js)
 
 ## License
 
