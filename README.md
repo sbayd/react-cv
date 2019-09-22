@@ -21,8 +21,8 @@ You can easily integrate it to your existing apps, if you don't want to build an
 - [X] Customizable
 - [X] Printable
 - [X] Responsive
-- [] One click deploy (On the way)
-- [] Inline edit (On the way)
+- [ ] One click deploy (On the way)
+- [ ] Inline edit (On the way)
 
 ## How to install ?
 
