@@ -14,10 +14,15 @@ You can easily integrate it to your existing apps, if you don't want to build an
 
 ![Preview Desktop / PDF](cv_preview.png)
 
-![Preview Mobile](mobile_preview.png)
-
 [Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
 
+### Features
+- [X] Ready to use by forking or installing on NPM
+- [X] Customizable
+- [X] Printable
+- [X] Responsive
+- [] One click deploy (On the way)
+- [] Inline edit (On the way)
 
 ## How to install ?
 
