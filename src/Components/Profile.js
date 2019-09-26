@@ -37,7 +37,7 @@ class ContactList extends React.Component {
 
 export default class Profile extends React.Component {
   render() {
-    const { name, title, contacts } = this.props
+    const { name, title, contacts, image } = this.props
     return (
       <div className={mc(B.container, B.box, B.hero, B['is-primary'], B['is-paddingless'], B['is-marginless'])}>
         <div className={B['hero-body']}>
@@ -47,7 +47,7 @@ export default class Profile extends React.Component {
                 <div className={B['level-left']}>
                   <div className={B['level-item']}>
                     <figure className={mc(B.image, B['is-128x128'])}>
-                      <img className={B['is-rounded']} src='https://bulma.io/images/placeholders/128x128.png' />
+                      <img className={B['is-rounded']} src={image} />
                     </figure>
                   </div>
                   <div className={B['has-text-centered']}>
