@@ -89,4 +89,13 @@ body {
     page-break-inside: avoid;
   }
 
+  .branding {
+    display: none;
+  }
+
+}
+
+.branding {
+  margin-top: 20px;
+  text-align: center;
 }

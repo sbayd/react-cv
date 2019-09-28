@@ -8,7 +8,6 @@ export default class App extends Component {
     return (
       <div>
         <CV {...CVData} />
-        <a href="https://www.github.com/sbayd/react-cv">React CV Template,  Documentation/Details at: https://www.github.com/sbayd/react-cv</a>
       </div>
     )
   }

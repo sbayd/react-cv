@@ -57,7 +57,8 @@ class Example extends Component {
           title: 'Career Profile',
           content: 'When I was child, I always want to be a developer.',
           icon: 'usertie'
-        }]}
+		}]}
+		branding={true} // or false to hide it.
 	  />
     )
   }

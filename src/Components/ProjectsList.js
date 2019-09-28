@@ -46,7 +46,7 @@ export default class ProjectsList extends React.Component {
                       >
                         {projectUrl ? <a href={getFixedUrl(projectUrl)} target='_blank'>{title}</a> : title}
                       </h6>
-                      { description ? <span>- {description}</span> : null}
+                      { description ? <div style={{ margin: 10 }} >{description}</div> : null}
                     </div>
                   );
                 })}
