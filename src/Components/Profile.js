@@ -4,13 +4,14 @@ import mc from 'classnames';
 import B from 'bulma/css/bulma.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faPhone, faGlobeAmericas, faExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone, faGlobeAmericas, faExclamation, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { formatAnchorValue } from '../utils';
 import Styles from './../styles.css';
 
 const iconMap = {
   email: faEnvelope,
   phone: faPhone,
+  location: faMapMarkerAlt,
   website: faGlobeAmericas,
   linkedin: faLinkedin,
   github: faGithub,

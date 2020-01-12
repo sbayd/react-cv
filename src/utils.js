@@ -8,6 +8,8 @@ export const formatAnchorValue = (type, value) => {
       return `mailto:${value}`;
     case 'phone':
       return `tel:${value}`;
+    case 'location':
+      return `https://maps.google.com/?q=${encodeURIComponent(value)}`;
     case 'website':
     case 'github':
     case 'linkedin':
