@@ -25,7 +25,7 @@ export default class ReactCV extends Component {
       name: PropTypes.string.isRequired,
       title: PropTypes.string,
       contacts: PropTypes.arrayOf(PropTypes.shape({
-        type: PropTypes.oneOf(['email', 'website', 'phone', 'linkedin', 'github']),
+        type: PropTypes.oneOf(['email', 'website', 'phone', 'location', 'linkedin', 'github']),
         value: PropTypes.string
       })),
       languages: PropTypes.arrayOf(PropTypes.shape({
@@ -49,6 +49,7 @@ export default class ReactCV extends Component {
       contacts: [
         { type: 'email', value: 'john@example.com' },
         { type: 'phone', value: '+00 (123) 456 78 90' },
+        { type: 'location', value: 'New York' },
         { type: 'website', value: 'example.com' },
         { type: 'linkedin', value: 'linkedin.com/in/notexists' },
         { type: 'twitter', value: 'twitter.com/404' },

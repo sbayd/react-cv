@@ -7,6 +7,7 @@ export const CVData = {
       contacts: [
         { type: 'email', value: 'john@example.com' },
         { type: 'phone', value: '+00 (123) 456 78 90' },
+        { type: 'location', value: 'New York' },
         { type: 'website', value: 'example.com' },
         { type: 'linkedin', value: 'linkedin.com/in/notexists' },
         { type: 'twitter', value: 'twitter.com/404' },

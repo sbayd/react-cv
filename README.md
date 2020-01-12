@@ -1,6 +1,6 @@
 # React-CV
 
-> A Readt to use resume (CV) Component built by React, available for React/Gatsby and fully printable!
+> A Ready to use resume (CV) Component built by React, available for React/Gatsby and fully printable!
 
 React-CV is fully customizable,responsive and printable CV / Resume component for React/Gatsby.
 You can easily create your fully printable and beatiful CV / Resume by passing necessary props to React-CV. 
@@ -47,6 +47,7 @@ class Example extends Component {
           contacts: [
             { type: 'email', value: 'john@example.com' },
             { type: 'phone', value: '+00 (123) 456 78 90' },
+            { type: 'location', value: 'New York' },
             { type: 'website', value: 'example.com' },
             { type: 'linkedin', value: 'linkedin.com/in/notexists' },
             { type: 'twitter', value: 'twitter.com/404' },
@@ -57,9 +58,9 @@ class Example extends Component {
           title: 'Career Profile',
           content: 'When I was child, I always want to be a developer.',
           icon: 'usertie'
-		}]}
-		branding={true} // or false to hide it.
-	  />
+        }]}
+        branding={true} // or false to hide it.
+      />
     )
   }
 }
@@ -73,53 +74,53 @@ Here are the complete list of props and descriptions.
 ### List of Props
 - Personal Data
 
-	Name of Prop: personalData
-	Type: Object
-	Schema: 
-	```js
-	{
-	name: 'String',
-	title: 'String',
-	image: 'String', // URL
-	contacts: [ // Array of objects
-		{ // Single contact object
-			type: 'String', // Available values ['email', 'phone', 'website', 'github', 'linkedin', 'twitter']
-			value: 'String'
-		}
-	]
-	}
-	```
+    Name of Prop: personalData
+    Type: Object
+    Schema: 
+    ```js
+    {
+    name: 'String',
+    title: 'String',
+    image: 'String', // URL
+    contacts: [ // Array of objects
+        { // Single contact object
+            type: 'String', // Available values ['email', 'phone', 'website', 'github', 'linkedin', 'twitter']
+            value: 'String'
+        }
+    ]
+    }
+    ```
 
 - Sections (Experiences, Projects, Career Profile, Skills, ETC)
 
-	Name of Prop: sections
-	Type: Array Of  Objects
-	Schema of single objeect: 
-	```js
-	{
-	type: 'String', // Available values ['text', 'common-list', 'projects-list', 'tag-list']
-	title: 'String',
-	icon: 'String or SVG Icon', // Available values ['graduation', 'book', 'comments', 'tasks', 'archive', 'rocket', 'language', 'cubes', 'usertie'] or FontAwesome SVG Icon
-	description: 'String',
-	groups: [ // Array of Object, if type is only projects-list
-		{ // Schema of single group object
+    Name of Prop: sections
+    Type: Array Of  Objects
+    Schema of single objeect: 
+    ```js
+    {
+    type: 'String', // Available values ['text', 'common-list', 'projects-list', 'tag-list']
+    title: 'String',
+    icon: 'String or SVG Icon', // Available values ['graduation', 'book', 'comments', 'tasks', 'archive', 'rocket', 'language', 'cubes', 'usertie'] or FontAwesome SVG Icon
+    description: 'String',
+    groups: [ // Array of Object, if type is only projects-list
+        { // Schema of single group object
           sectionHeader: 'Company Name',
           description: 'Optional',
           items: [
             { title: 'Project', projectUrl: 'optional', description: 'Optional' },
           ]
-		} 
-	},
-	items: [ // Array of Objects(type:common-list) or Array of Strings(type:tag-list)
-		{
-			  title: 'Some Conferences / 2019',
-			  authority: 'SomeConf',
-			  authorityMeta: 'Speaker',
-			  authorityWebSite: 'https://www.someconf.somesome',
-			  rightSide: 'test'
-		}
-	]
-	```
+        } 
+    },
+    items: [ // Array of Objects(type:common-list) or Array of Strings(type:tag-list)
+        {
+              title: 'Some Conferences / 2019',
+              authority: 'SomeConf',
+              authorityMeta: 'Speaker',
+              authorityWebSite: 'https://www.someconf.somesome',
+              rightSide: 'test'
+        }
+    ]
+    ```
 
 Too Lazy to read documentation? See working versions in example:
 
