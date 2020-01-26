@@ -3,7 +3,7 @@
 > A Ready to use resume (CV) Component built by React, available for React/Gatsby and fully printable!
 
 React-CV is fully customizable,responsive and printable CV / Resume component for React/Gatsby.
-You can easily create your fully printable and beatiful CV / Resume by passing necessary props to React-CV.
+You can easily create your fully printable and beautiful CV / Resume by passing necessary props to React-CV.
 If needed, It is possible to use your own component inside.
 
 You can easily integrate it to your existing apps, if you don't want to build an app, just fork the repository and edit data.js inside example app and build it!
@@ -84,7 +84,7 @@ Here are the complete list of props and descriptions.
     image: 'String', // URL
     contacts: [ // Array of objects
         { // Single contact object
-            type: 'String', // Available values ['email', 'phone', 'website', 'github', 'linkedin', 'twitter']
+            type: 'String', // Available values ['email', 'phone', 'location', 'website', 'github', 'linkedin', 'twitter']
             value: 'String'
         }
     ]
@@ -95,7 +95,7 @@ Here are the complete list of props and descriptions.
 
     Name of Prop: sections
     Type: Array Of  Objects
-    Schema of single objeect: 
+    Schema of single object: 
     ```js
     {
     type: 'String', // Available values ['text', 'common-list', 'projects-list', 'tag-list']

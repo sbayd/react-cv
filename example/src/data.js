@@ -137,7 +137,7 @@ export const CVData = {
       },
       {
         type: 'tag-list',
-        title: 'Hobies & Interests',
+        title: 'Hobbies & Interests',
         icon: 'cubes',
         items: ['Photography', 'Poetry']
       }
