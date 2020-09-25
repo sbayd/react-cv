@@ -2,12 +2,13 @@
   "name": "react-cv",
   "version": "1.1.0",
   "description": "React-CV is fully customizable and printable CV / Resumee component for React/Gatsby.",
-  "author": "sbayd",
+  "author": "sbayd, ysonggit",
   "license": "MIT",
-  "repository": "sbayd/react-cv",
+  "repository": "ysonggit/react-cv",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
+  "homepage": "https://ysonggit.github.io/react-cv",
   "engines": {
     "node": ">=8",
     "npm": ">=5"
