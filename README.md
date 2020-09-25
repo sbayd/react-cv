@@ -10,7 +10,7 @@ You can easily integrate it to your existing apps, if you don't want to build an
 
 [Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
 
-[![NPM](https://img.shields.io/npm/v/react-cv.svg)](https://www.npmjs.com/package/react-cv) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![CircleCI](https://circleci.com/gh/ysonggit/react-cv.svg?style=svg)](https://circleci.com/gh/ysonggit/react-cv) [![NPM](https://img.shields.io/npm/v/react-cv.svg)](https://www.npmjs.com/package/react-cv) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![Preview Desktop / PDF](cv_preview.png)
 

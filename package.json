@@ -2,7 +2,7 @@
   "name": "react-cv",
   "version": "1.1.0",
   "description": "React-CV is fully customizable and printable CV / Resumee component for React/Gatsby.",
-  "author": "ysonggit",
+  "author": "sbayd, ysonggit",
   "license": "MIT",
   "repository": "ysonggit/react-cv",
   "main": "dist/index.js",
@@ -19,8 +19,8 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "prepare": "yarn run build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "predeploy": "cd example && yarn install && yarn run build",
+    "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
