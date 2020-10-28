@@ -12,12 +12,20 @@
 }
 
 .sectionIcon {
-  padding: 10px;
   font-size: 20px;
   margin-right: 0.75em;
   border-radius: 100%;
   background: #2d7788;
   color: white;
+  width: 48px;
+  height: 48px;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+}
+
+.sectionIcon svg {
+  margin: 0 auto;
 }
 
 .sectionTitle {
@@ -45,7 +53,7 @@
   display: inline;
 }
 
-.companyMeta, .projectMeta { 
+.companyMeta, .projectMeta {
   padding: 1em;
 }
 
@@ -74,6 +82,11 @@ body {
   background-color: #f5f5f5;
 }
 
+
+.project-group:not(:first-of-type) {
+  margin-top: 30px;
+}
+
 @media print {
   .sectionContainer {
     padding: 0px;
@@ -92,7 +105,20 @@ body {
   .branding {
     display: none;
   }
+  body {
+    background-color: white;
+  }
+  .appContainer {
+    max-width: 100%;
+    padding: 0;
+  }
 
+  .sectionContainer {
+    padding: 0;
+  }
+
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
 }
 
 .branding {

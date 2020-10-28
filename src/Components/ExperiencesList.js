@@ -25,7 +25,6 @@ export default class ExperiencesList extends React.Component {
     return (
       <CommonList
         {...this.props}
-        xtraClassName={Styles.avoidBreakingOnPrint}
         items={convertedItems}
       />
     );
