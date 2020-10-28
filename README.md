@@ -76,7 +76,7 @@ Here are the complete list of props and descriptions.
 
     Name of Prop: personalData
     Type: Object
-    Schema: 
+    Schema:
     ```js
     {
     name: 'String',
@@ -95,7 +95,7 @@ Here are the complete list of props and descriptions.
 
     Name of Prop: sections
     Type: Array Of  Objects
-    Schema of single object: 
+    Schema of single object:
     ```js
     {
     type: 'String', // Available values ['text', 'common-list', 'projects-list', 'tag-list']
@@ -109,7 +109,7 @@ Here are the complete list of props and descriptions.
           items: [
             { title: 'Project', projectUrl: 'optional', description: 'Optional' },
           ]
-        } 
+        }
     },
     items: [ // Array of Objects(type:common-list) or Array of Strings(type:tag-list)
         {
@@ -127,6 +127,11 @@ Too Lazy to read documentation? See working versions in example:
 [Example App Code](https://github.com/sbayd/react-cv/blob/master/example/src/App.js)
 
 [Example Data Format With Full Types (Code)](https://github.com/sbayd/react-cv/blob/master/example/src/data.js)
+
+
+## Change Log
+
+ - 1.2.0 : Print CSS improvements
 
 ## License
 
