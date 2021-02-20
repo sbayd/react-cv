@@ -7,7 +7,7 @@ export const CVData = {
       contacts: [
         { type: 'email', value: 'dwarakesh100@gmail.com' },
         { type: 'phone', value: '+65 91468973' },
-        { type: 'location', value: 'Singapore' },
+        { type: 'location', value: 'Singapore, Singapore Citizen' },
         { type: 'website', value: 'dwarakesh.com' },
         { type: 'linkedin', value: 'linkedin.com/in/notexists' },
         { type: 'twitter', value: 'twitter.com/404' },
