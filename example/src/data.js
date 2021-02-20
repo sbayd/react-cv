@@ -1,7 +1,7 @@
 
 export const CVData = {
     personalData: {
-      name: 'Rakesh Chandrasekar - Testing',
+      name: 'Rakesh Chandrasekar',
       title: 'Robotics/IoT Software Engineer',
       image: 'https://media-exp1.licdn.com/dms/image/C5603AQHUFJOONuISfw/profile-displayphoto-shrink_400_400/0/1591795086252?e=1619049600&v=beta&t=fSuZkENjbkGKAWz8Rt0V6w4U6nWSLDri4oos6NE1s8Q',
       contacts: [
