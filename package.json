@@ -65,6 +65,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "bulma": "^0.7.5",
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "example": "^0.0.0"
   }
 }

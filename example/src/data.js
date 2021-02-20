@@ -1,14 +1,14 @@
 
 export const CVData = {
     personalData: {
-      name: 'John Doe',
-      title: 'Senior Software Developer',
-      image: 'https://bulma.io/images/placeholders/128x128.png',
+      name: 'Rakesh Chandrasekar',
+      title: 'Robotics/IoT Software Engineer',
+      image: 'https://media-exp1.licdn.com/dms/image/C5603AQHUFJOONuISfw/profile-displayphoto-shrink_400_400/0/1591795086252?e=1619049600&v=beta&t=fSuZkENjbkGKAWz8Rt0V6w4U6nWSLDri4oos6NE1s8Q',
       contacts: [
-        { type: 'email', value: 'john@example.com' },
-        { type: 'phone', value: '+00 (123) 456 78 90' },
-        { type: 'location', value: 'New York' },
-        { type: 'website', value: 'example.com' },
+        { type: 'email', value: 'dwarakesh100@gmail.com' },
+        { type: 'phone', value: '+65 91468973' },
+        { type: 'location', value: 'Singapore' },
+        { type: 'website', value: 'dwarakesh.com' },
         { type: 'linkedin', value: 'linkedin.com/in/notexists' },
         { type: 'twitter', value: 'twitter.com/404' },
         { type: 'github', value: 'github.com/404' }
@@ -27,16 +27,16 @@ export const CVData = {
         icon: 'graduation',
         items: [
           {
-            title: 'Computer Engineering (BS)',
-            authority: 'University',
-            authorityWebSite: 'https://sample.edu',
-            rightSide: '2013 - 2017'
+            title: 'Bachelor of Engineering - Mechanical Engineering',
+            authority: 'Nanyang Technological University',
+            authorityWebSite: 'https://ntu.edu.sg',
+            rightSide: '2016 - 2020'
           },
           {
-            title: 'Some Department (PHD)',
-            authority: 'Another University',
-            authorityWebSite: 'https://sample.edu',
-            rightSide: '2017 - Present'
+            title: 'Diploma in Mechanical Engineering',
+            authority: 'Ngee Ann Polytechnic',
+            authorityWebSite: 'https://np.edu.sg',
+            rightSide: '2010 - 2013'
           }
         ]
       },
@@ -47,19 +47,19 @@ export const CVData = {
         icon: 'archive',
         items: [
           {
-            title: 'Lead Software Developer',
-            company: 'Some Company Example INC',
-            description: 'I\'m working as a lead developer yeeeey!',
-            companyWebSite: 'http://somecompanyexample.com',
+            title: 'Robotics Software Engineer',
+            company: 'Continental AG',
+            description: 'Developing software solutions for Autonomous Mobile Robots (AMRs)',
+            companyWebSite: 'https://www.continental.com',
             companyMeta: '',
             datesBetween: '2017.10 - Present',
-            descriptionTags: ['Javascript', 'React']
+            descriptionTags: ['Javascript', 'React','ROS','C++','Python']
           },
           {
-            title: 'Software Developer',
-            company: 'Some Company Example INC',
+            title: 'Project Officer',
+            company: 'Nanyang Technological University',
             description: 'I\'m using ReactJS and working as a front-end developer',
-            companyWebSite: 'http://somecompanyexample.com',
+            companyWebSite: 'https://www.ntu.edu.sg',
             companyMeta: 'Little info about company',
             datesBetween: '2016.8 - 2017.10'
           },
@@ -133,7 +133,7 @@ export const CVData = {
         type: 'tag-list',
         title: 'Skills Proficiency',
         icon: 'rocket',
-        items: ['React', 'Javascript', 'CSS', 'SQL', 'SomeTech', 'CoolTech']
+        items: ['React', 'Javascript', 'Python', 'C++', 'SomeTech', 'CoolTech']
       },
       {
         type: 'tag-list',
