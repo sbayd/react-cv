@@ -29,13 +29,13 @@ export const CVData = {
           {
             title: 'Bachelor of Engineering - Mechanical Engineering',
             authority: 'Nanyang Technological University',
-            authorityWebSite: 'https://ntu.edu.sg',
+            authorityWebSite: 'https://www.ntu.edu.sg',
             rightSide: '2016 - 2020'
           },
           {
             title: 'Diploma in Mechanical Engineering',
             authority: 'Ngee Ann Polytechnic',
-            authorityWebSite: 'https://np.edu.sg',
+            authorityWebSite: 'https://www.np.edu.sg',
             rightSide: '2010 - 2013'
           }
         ]
