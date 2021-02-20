@@ -9,7 +9,7 @@ export const CVData = {
         { type: 'phone', value: '+65 91468973' },
         { type: 'location', value: 'Singapore, Singapore Citizen' },
         { type: 'website', value: 'dwarakesh.com' },
-        { type: 'linkedin', value: 'linkedin.com/in/notexists' },
+        { type: 'linkedin', value: 'www.linkedin.com/in/rakesh13' },
         { type: 'twitter', value: 'twitter.com/404' },
         { type: 'github', value: 'github.com/404' }
       ]
