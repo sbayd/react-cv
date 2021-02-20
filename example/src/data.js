@@ -1,7 +1,7 @@
 
 export const CVData = {
     personalData: {
-      name: 'Rakesh Chandrasekar',
+      name: 'Rakesh Chandrasekar - Testing',
       title: 'Robotics/IoT Software Engineer',
       image: 'https://media-exp1.licdn.com/dms/image/C5603AQHUFJOONuISfw/profile-displayphoto-shrink_400_400/0/1591795086252?e=1619049600&v=beta&t=fSuZkENjbkGKAWz8Rt0V6w4U6nWSLDri4oos6NE1s8Q',
       contacts: [
@@ -9,7 +9,7 @@ export const CVData = {
         { type: 'phone', value: '+65 91468973' },
         { type: 'location', value: 'Singapore, Singapore Citizen' },
         { type: 'website', value: 'dwarakesh.com' },
-        { type: 'linkedin', value: 'linkedin.com/in/notexists' },
+        { type: 'linkedin', value: 'www.linkedin.com/in/rakesh13' },
         { type: 'twitter', value: 'twitter.com/404' },
         { type: 'github', value: 'github.com/404' }
       ]
