@@ -1,7 +1,7 @@
 export const CVData = {
   personalData: {
     name: "Rakesh Chandrasekar",
-    title: "Robotics/IoT Software Engineer",
+    title: "Robotics Engineer",
     image:
       "https://media-exp1.licdn.com/dms/image/C5603AQHUFJOONuISfw/profile-displayphoto-shrink_400_400/0/1591795086252?e=1619049600&v=beta&t=fSuZkENjbkGKAWz8Rt0V6w4U6nWSLDri4oos6NE1s8Q",
     contacts: [
@@ -11,7 +11,7 @@ export const CVData = {
       { type: "website", value: "dwarakesh.com" },
       { type: "linkedin", value: "www.linkedin.com/in/rakesh13" },
       { type: "twitter", value: "https://twitter.com/rakesh131993" },
-      { type: "github", value: "github.com/404" }
+      { type: "github", value: "https://github.com/dwarak100"}
     ]
   },
   sections: [
@@ -19,7 +19,7 @@ export const CVData = {
       type: "text",
       title: "Career Profile",
       content:
-        "I am a project officer in the applied research industry with experience in mechanical design/analysis, robotics and internet of things applications. Being a self-motivated and driven individual, I work well independently and across many different teams to design innovative and practical solutions to solve technical and business challenges.",
+        "I am a robotics engineer in the robotics industry with experience in mechanical design/analysis, robotics and internet of things applications. Being a self-motivated and driven individual, I work well independently and across many different teams to design innovative and practical solutions to solve technical and business challenges.",
 
       icon: "usertie"
     },
@@ -50,30 +50,21 @@ export const CVData = {
       items: [
         {
           title: "Robotics Software Engineer",
-          company: "Continental AG",
+          company: "Continental Automotive Group",
           description:
-            "Developing software solutions for Autonomous Mobile Robots (AMRs)",
+            "Developing software for Autonomous Mobile Robots (AMRs)",
           companyWebSite: "https://www.continental.com",
           companyMeta: "",
-          datesBetween: "2017.10 - Present",
-          descriptionTags: ["Javascript", "React", "ROS", "C++", "Python"]
+          datesBetween: "April 2021 - Present",
+          descriptionTags: ["Javascript", "React", "NodeJS", "ROS", "C++", "Python"]
         },
         {
           title: "Project Officer",
           company: "Nanyang Technological University",
           description:
-            "- Developed python scripts for specialized industrial sensors to perform on single board computers and microcontrollers.\n - Implemented IoT based wireless data acquisition systems for remote energy resource mapping efforts. \n",
+            "- Developed python scripts for specialized industrial sensors to perform on single board computers and microcontrollers.\n- Implemented IoT based wireless data acquisition systems for remote energy resource mapping efforts. \n",
           companyWebSite: "https://www.ntu.edu.sg",
-          companyMeta: "Little info about company",
-          datesBetween: "2016.8 - 2017.10"
-        },
-        {
-          title: "Intern",
-          company: "Some Software Example INC",
-          description: "I was warming up.",
-          companyWebSite: "http://someexamplecompany.com",
-          companyMeta: "SF USA",
-          datesBetween: "2012.06 - 2012.10"
+          datesBetween: "November 2015 - March 2021"
         }
       ]
     },
@@ -140,8 +131,8 @@ export const CVData = {
           authorityMeta: "Professional"
         },
         {
-          authority: "Spanish",
-          authorityMeta: "Beginner"
+          authority: "Tamil",
+          authorityMeta: "Native"
         }
       ]
     },
