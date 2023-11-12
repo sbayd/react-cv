@@ -41,7 +41,7 @@ class Example extends Component {
     return (
       <CV
         personalData={{
-          name: 'John Doe',
+          name: 'S. Berkay Aydin',
           title: 'Senior Software Developer',
           image: 'https://bulma.io/images/placeholders/128x128.png',
           contacts: [
@@ -49,14 +49,16 @@ class Example extends Component {
             { type: 'phone', value: '+00 (123) 456 78 90' },
             { type: 'location', value: 'New York' },
             { type: 'website', value: 'example.com' },
-            { type: 'linkedin', value: 'linkedin.com/in/notexists' },
-            { type: 'twitter', value: 'twitter.com/404' },
-            { type: 'github', value: 'github.com/404' }
+            { type: 'linkedin', value: 'linkedin.com/in/sbaydin' },
+            { type: 'twitter', value: 'twitter.com/sbayd' },
+            { type: 'github', value: 'github.com/sbayd' }
         ]}}
         sections= {[{
           type: 'text',
           title: 'Career Profile',
-          content: 'When I was child, I always want to be a developer.',
+          content: `When I was a child, I always wanted to be a developer..
+          then this hapened
+          `,
           icon: 'usertie'
         }]}
         branding={true} // or false to hide it.
@@ -130,6 +132,8 @@ Too Lazy to read documentation? See working versions in example:
 
 
 ## Change Log
+
+ - 1.3.0 : Markdown support on description, React 18 and build tool updates.
 
  - 1.2.0 : Print CSS improvements
 

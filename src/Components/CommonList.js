@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'classnames';
-import BulmaCSS from 'bulma/css/bulma.css'
-import Styles from '../styles.css';
+import BulmaCSS from '../bulma.module.css';
+import Styles from '../styles.module.css';
 import Section from './Section';
 import { getFixedUrl } from '../utils';
 import { PureTagList } from './TagsList';
+import MarkdownRenderer from './MarkdownRenderer';
 
 export default class CommonList extends React.Component {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({})),
     title: PropTypes.string,
     description: PropTypes.string,
-    icon: PropTypes.shape({})
+    icon: PropTypes.oneOfType([PropTypes.shape({}), PropTypes.string]),
   }
 
   render() {
@@ -25,10 +26,10 @@ export default class CommonList extends React.Component {
         icon={icon}
       >
         <div className={mergeClassNames(BulmaCSS.container, BulmaCSS['is-medium'], Styles.commonListContainer)}>
-          {items.map((item) => {
+          {items.map((item, i) => {
             const { authority, authorityWebSite, authorityMeta, rightSide, title, description, descriptionTags } = item;
             return (
-              <div className={mergeClassNames(BulmaCSS.content, Styles.avoidBreakingOnPrint)}>
+              <div className={mergeClassNames(BulmaCSS.content, Styles.avoidBreakingOnPrint)} key={i}>
                 <div className={mergeClassNames(BulmaCSS.level, BulmaCSS['is-marginless'], BulmaCSS['is-paddingless'])}>
                   <h5 className={mergeClassNames(BulmaCSS.title, BulmaCSS['is-marginless'], BulmaCSS['level-left'], BulmaCSS['is-size-5'])}>{title}
                   </h5>
@@ -42,10 +43,12 @@ export default class CommonList extends React.Component {
                 { authorityMeta
                   ? <span className={mergeClassNames(Styles.companyMeta)}>{`(${authorityMeta})`}</span>
                   : null}
-                <p>
+                <div>
                   {descriptionTags && <PureTagList tags={descriptionTags} tagClass='is-info' /> }
-                  {description}
-                </p>
+                  <MarkdownRenderer
+                    markdown={description}
+                  />
+                </div>
               </div>);
           })}
         </div>

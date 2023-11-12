@@ -1,12 +1,12 @@
 import React from 'react';
 
 import mc from 'classnames';
-import B from 'bulma/css/bulma.css'
+import B from '../bulma.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faPhone, faGlobeAmericas, faExclamation, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { formatAnchorValue } from '../utils';
-import Styles from './../styles.css';
+import Styles from './../styles.module.css';
 
 const iconMap = {
   email: faEnvelope,
@@ -22,9 +22,9 @@ class ContactList extends React.Component {
   render() {
     return (
       <div className={mc(Styles.contactListContainer, B['has-text-white'])}>
-        {this.props.items.map(item => {
+        {this.props.items.map((item, i) => {
           const icon = iconMap[item.type] || faExclamation;
-          return <div className={Styles.contactListItem}>
+          return <div className={Styles.contactListItem} key={i}>
             <FontAwesomeIcon icon={icon} />
             <a className={Styles.contactListItemContent} href={formatAnchorValue(item.type, item.value)} target='_blank'>
               {item.value}

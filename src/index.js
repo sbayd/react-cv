@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import BulmaCSS from 'bulma/css/bulma.css'
+import BulmaCSS from './bulma.module.css'
 import mergeClassNames from 'classnames'
 import Profile from './Components/Profile'
-import Styles from './styles.css';
+import Styles from './styles.module.css';
 import Section from './Components/Section'
 import ExperiencesList from './Components/ExperiencesList'
 import ProjectsList from './Components/ProjectsList'
@@ -25,7 +25,7 @@ export default class ReactCV extends Component {
       name: PropTypes.string.isRequired,
       title: PropTypes.string,
       contacts: PropTypes.arrayOf(PropTypes.shape({
-        type: PropTypes.oneOf(['email', 'website', 'phone', 'location', 'linkedin', 'github']),
+        type: PropTypes.oneOf(['email', 'website', 'phone', 'location', 'linkedin', 'github', 'twitter']),
         value: PropTypes.string
       })),
       languages: PropTypes.arrayOf(PropTypes.shape({
@@ -43,17 +43,17 @@ export default class ReactCV extends Component {
 
   static defaultProps = {
     personalData: {
-      name: 'John Doe',
+      name: 'S. Berkay Aydin',
       title: 'Senior Software Developer',
       image: 'https://bulma.io/images/placeholders/128x128.png',
       contacts: [
         { type: 'email', value: 'john@example.com' },
         { type: 'phone', value: '+00 (123) 456 78 90' },
         { type: 'location', value: 'New York' },
-        { type: 'website', value: 'example.com' },
-        { type: 'linkedin', value: 'linkedin.com/in/notexists' },
-        { type: 'twitter', value: 'twitter.com/404' },
-        { type: 'github', value: 'github.com/404' }
+        { type: 'website', value: 'cv.sbaydin.com' },
+        { type: 'linkedin', value: 'linkedin.com/in/sbaydin' },
+        { type: 'twitter', value: 'twitter.com/sbayd' },
+        { type: 'github', value: 'github.com/sbayd' }
       ]},
     sections: [{
       type: 'text',
@@ -73,17 +73,17 @@ export default class ReactCV extends Component {
               {...this.props.personalData}
             />
             {
-              this.props.sections.map((sectionDetails) => {
+              this.props.sections.map((sectionDetails, i) => {
                 const { type } = sectionDetails;
                 const Comp = componnentMap[type] || Section; // Fallback to section for any case.
-                return <Comp {...sectionDetails} />
+                return <Comp {...sectionDetails} key={i} />
               })
             }
 
           </div>
         </main>
         {this.props.branding && <div className={Styles.branding}>
-          You can create your own CV like this. Try <a href='https://github.com/sbayd/react-cv' targt='_blank'>React-CV</a> now.
+          Craft your personalized CV effortlessly with React-CV! Explore the possibilities at <a href='https://github.com/sbayd/react-cv' target='_blank'>React-CV</a> and set yourself apart professionally.
         </div>
         }
       </section>

@@ -1,22 +1,22 @@
 {
   "name": "react-cv-example",
-  "homepage": "https://sbayd.github.io/react-cv",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Example project for react-cv",
+  "main": "index.js",
+  "source": "index.html",
+  "author": "sbayd",
   "license": "MIT",
-  "private": true,
-  "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-cv": "link:..",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "storybook": "start-storybook",
-    "styleguide": "styleguidist server",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "watch": "parcel index.html",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-cv": "link:../",
+    "react-dom": "^18.2.0"
   }
 }

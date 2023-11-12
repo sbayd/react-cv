@@ -116,9 +116,6 @@ body {
   .sectionContainer {
     padding: 0;
   }
-
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
 }
 
 .branding {

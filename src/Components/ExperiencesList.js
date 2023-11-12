@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CommonList from './CommonList';
-import Styles from '../styles.css';
+import Styles from '../styles.module.css';
 
 export default class ExperiencesList extends React.Component {
   static propTypes = {
     items: PropTypes.arrayOf(PropTypes.shape({})),
     title: PropTypes.string,
     description: PropTypes.string,
-    icon: PropTypes.shape({})
+    icon: PropTypes.oneOfType([PropTypes.shape({}), PropTypes.string])
   }
 
   render() {

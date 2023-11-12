@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import mergeClassNames from 'classnames';
-import BulmaCSS from 'bulma/css/bulma.css'
+import BulmaCSS from '../bulma.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Styles from '../styles.css';
+import Styles from '../styles.module.css';
 import { faBook, faGraduationCap, faArchive, faRocket, faTasks, faComment, faLanguage, faCubes, faExclamation, faUserTie } from '@fortawesome/free-solid-svg-icons'
+import MarkdownRenderer from './MarkdownRenderer';
 
 const predefinedIcons = {
   graduation: faGraduationCap,
@@ -21,7 +22,7 @@ export default class Section extends React.Component {
   static propTypes = {
     title: PropTypes.string,
     xtraClassName: PropTypes.string,
-    icon: PropTypes.shape(),
+    icon:  PropTypes.oneOfType([PropTypes.shape({}), PropTypes.string]),
     content: PropTypes.oneOfType([PropTypes.shape({}), PropTypes.string]),
     children: PropTypes.shape({})
   }
@@ -44,12 +45,16 @@ export default class Section extends React.Component {
             <div className={mergeClassNames(Styles.sectionContent)}>
               {
                 typeof this.props.content === 'string'
-                  ? <p>{this.props.content}</p> : this.props.content
+                  ? 
+                  <MarkdownRenderer
+                    markdown={this.props.content}
+                  />
+                  : this.props.content
               }
             </div>
             }
             {this.props.children &&
-              <div className={mergeClassNames(Styles.sectionContent, BulmaCSS.container, BulmaCSS['is-small'], 'bakbakbak')}>
+              <div className={mergeClassNames(Styles.sectionContent, BulmaCSS.container, BulmaCSS['is-small'])}>
                 {this.props.children}
               </div>
             }
