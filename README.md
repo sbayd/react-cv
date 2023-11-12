@@ -21,18 +21,23 @@ Experience the power of React-CV with our [Live Demo](https://sbayd.github.io/re
 
 ### Quick Start
 
-Install with NPM:
+Install with npm:
 
 ```shell
 npm install react-cv
 ```
 
-Install with Yarn:
+Install with yarn:
 
 ```shell
 yarn add react-cv
 ```
 
+Install with pnpm:
+
+```shell
+pnpm add react-cv
+```
 
 
 ### Crafting Your CV
