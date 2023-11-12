@@ -1,35 +1,44 @@
-# React-CV
 
-> A Ready to use resume (CV) Component built by React, available for React/Gatsby and fully printable!
+# React-CV: Your Professional Resume Builder
 
-React-CV is fully customizable,responsive and printable CV / Resume component for React/Gatsby.
-You can easily create your fully printable and beautiful CV / Resume by passing necessary props to React-CV.
-If needed, It is possible to use your own component inside.
+> Elevate your professional presence with React-CV — a versatile, ready-to-use resume component for React and Next.js. Craft a stunning CV that prints beautifully!
 
-You can easily integrate it to your existing apps, if you don't want to build an app, just fork the repository and edit data.js inside example app and build it!
+React-CV is not just a component; it's the next step in professional self-presentation. With React-CV, you can effortlessly build a responsive, printable, and customizable CV that stands out. Whether you're using React, Gatsby, or Next.js, React-CV is the perfect tool for creating resumes that make an impact.
 
-[Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
+Experience the power of React-CV with our [Live Demo](https://sbayd.github.io/react-cv/)!
 
 [![NPM](https://img.shields.io/npm/v/react-cv.svg)](https://www.npmjs.com/package/react-cv) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ![Preview Desktop / PDF](cv_preview.png)
 
-[Live Demo](https://sbayd.github.io/react-cv/ "Live Demo")
+### Why React-CV?
 
-### Features
-- [X] Ready to use by forking or installing on NPM
-- [X] Customizable
-- [X] Printable
-- [X] Responsive
-- [ ] One click deploy (On the way)
-- [ ] Inline edit (On the way)
+-   **Seamless Integration**: Plug React-CV into your existing React or Next.js applications with zero hassle.
+-   **Fork & Customize**: Not a fan of starting from scratch? Fork our repo, tweak `data.js`, and you're good to go!
+-   **Print-Perfect**: Your CV will look just as good on paper as it does on screen.
+-   **Responsive Design**: Looks great on all devices, from desktop to mobile.
+-   **Markdown Magic**: Now with markdown support in the `description` property for richer text formatting.
 
-## How to install ?
+### Quick Start
 
-`npm install react-cv` or `yarn add react-cv`
+Install with NPM:
+
+```shell
+npm install react-cv
+```
+
+Install with Yarn:
+
+```shell
+yarn add react-cv
+```
 
 
-## Basic Usage
+
+### Crafting Your CV
+
+Here's a simple example to get your resume up and running in minutes:
+
 
 ```jsx
 import React, { Component } from 'react'
@@ -56,9 +65,7 @@ class Example extends Component {
         sections= {[{
           type: 'text',
           title: 'Career Profile',
-          content: `When I was a child, I always wanted to be a developer..
-          then this hapened
-          `,
+          content: `When I was a child, I always wanted to be a developer..then this hapened **You can use markdown here**`,
           icon: 'usertie'
         }]}
         branding={true} // or false to hide it.
