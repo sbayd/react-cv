@@ -9,15 +9,11 @@
   "source": "src/index.js",
   "main": "dist/main.js",
   "module": "dist/module.js",
-  "engines": {
-    "node": ">=8",
-    "npm": ">=5"
-  },
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
     "predeploy": "cd example && yarn install && yarn run build",
-    "deploy": "gh-pages -d example/build"
+    "deploy": "gh-pages -d example/dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -34,7 +30,7 @@
   "devDependencies": {
     "@parcel/transformer-sass": "2.10.2",
     "autoprefixer": "^10.4.16",
-    "gh-pages": "^1.2.0",
+    "gh-pages": "6.0.0",
     "parcel": "^2.10.2",
     "postcss": "^8.1.0",
     "postcss-modules": "^4.3.0"
