@@ -83,7 +83,7 @@ export default class ReactCV extends Component {
           </div>
         </main>
         {this.props.branding && <div className={Styles.branding}>
-          Craft your personalized CV effortlessly with React-CV! Explore the possibilities at <a href='https://github.com/sbayd/react-cv' target='_blank'>React-CV</a> and set yourself apart professionally.
+          Craft your personalized CV effortlessly with  <a href='https://github.com/sbayd/react-cv' target='_blank'>React-CV</a>! <br />Explore the possibilities at <a href='https://github.com/sbayd/react-cv' target='_blank'>React-CV</a> and set yourself apart professionally.
         </div>
         }
       </section>

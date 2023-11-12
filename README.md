@@ -145,6 +145,8 @@ Too Lazy to read documentation? See working versions in example:
 
 ## Change Log
 
+ - 1.5.1 : Build system updates
+
  - 1.3.0 : Markdown support on description, React 18 and build tool updates.
 
  - 1.2.0 : Print CSS improvements
