@@ -1,6 +1,6 @@
 {
   "name": "react-cv",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "React-CV is fully customizable and printable CV / Resumee component for React/Gatsby.",
   "author": "sbayd",
   "license": "MIT",
@@ -15,10 +15,10 @@
     "deploy": "gh-pages -d example/dist"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.30",
-    "@fortawesome/free-brands-svg-icons": "^5.14.0",
-    "@fortawesome/free-solid-svg-icons": "^5.14.0",
-    "@fortawesome/react-fontawesome": "^0.1.11",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@swc/helpers": "0.5.3",
     "classnames": "^2.2.6",
     "marked": "^10.0.0",
@@ -29,6 +29,12 @@
   "devDependencies": {
     "@parcel/transformer-sass": "2.10.2",
     "autoprefixer": "^10.4.16",
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "6.0.0",
     "parcel": "^2.10.2",
     "postcss": "^8.1.0",

@@ -1,5 +1,23 @@
 {
   "env": {
     "jest": true
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": ["airbnb", "airbnb/hooks"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react/no-array-index-key": "off",
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
   }
 }
